@@ -73,70 +73,18 @@ public class Task14 {
             System.out.println("Помилка: " + e.getMessage());
         }
 
-
         System.out.println();
-        System.out.println("=== Тест 2: дозволена комбінація ===");
+        System.out.println("=== Тест 2: заборонена комбінація ===");
 
-        int[] array2 = {-20, -7, 8, 4, -2, 15};
+        int[] array2 = {1, 3, 5, 7, 9};
 
         try {
             int result = findAbsArray(array2);
 
-            System.out.println("Масив: {-20, -7, 8, 4, -2, 15}");
-            System.out.println("Результат: " + result);
-
-        } catch (IllegalArgumentException e) {
-            System.out.println("Помилка: " + e.getMessage());
-        }
-
-
-        System.out.println();
-        System.out.println("=== Тест 3: заборонена комбінація ===");
-
-        int[] array3 = {1, 3, 5, 7, 9};
-
-        try {
-            int result = findAbsArray(array3);
-
             System.out.println("Результат: " + result);
 
         } catch (IllegalArgumentException e) {
             System.out.println("Очікувана помилка: " + e.getMessage());
         }
-
-
-        System.out.println();
-        System.out.println("=== Тест 4: заборонена комбінація ===");
-
-        int[] array4 = {2, 4, 6, 8, 10};
-
-        try {
-            int result = findAbsArray(array4);
-
-            System.out.println("Результат: " + result);
-
-        } catch (IllegalArgumentException e) {
-            System.out.println("Очікувана помилка: " + e.getMessage());
-        }
-
-
-        System.out.println();
-        System.out.println("=== Тест 5: заборонена комбінація ===");
-
-        int[] array5 = {};
-
-        try {
-            int result = findAbsArray(array5);
-
-            System.out.println("Результат: " + result);
-
-        } catch (IllegalArgumentException e) {
-            System.out.println("Очікувана помилка: " + e.getMessage());
-        }
-
-
-        System.out.println();
-        System.out.println("=== Тест 6: заборонена комбінація ===");
-
     }
 }
