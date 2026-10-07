@@ -70,12 +70,27 @@ public class Task67 {
         int[] b2 = {};
 
         try {
-            int[] result6 = createArray(a2, b2);
+            int[] result2 = createArray(a2, b2);
 
-            System.out.println("C = " + Arrays.toString(result6));
+            System.out.println("C = " + Arrays.toString(result2));
 
         } catch (IllegalArgumentException e) {
             System.out.println("Очікувана помилка: " + e.getMessage());
         }
+        System.out.println();
+        System.out.println("=== Тест 3: заборонена комбінація ===");
+
+        int[] a3 = {1, 2, 3};
+        int[] b3 = null;
+
+        try {
+            int[] result3 = createArray(a3, b3);
+
+            System.out.println("C = " + Arrays.toString(result3));
+
+        } catch (IllegalArgumentException e) {
+            System.out.println("Очікувана помилка: " + e.getMessage());
+        }
+
     }
 }

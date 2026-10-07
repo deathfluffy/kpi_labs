@@ -18,7 +18,6 @@ public class Task14 {
         boolean hasNegative = false;
         boolean hasEven = false;
 
-        // Цикл for з лічильником
         for (int x : array) {
 
             // Пошук найбільшого від'ємного елемента
@@ -56,7 +55,6 @@ public class Task14 {
     }
 
 
-    // Точка входу в програму
     public static void main(String[] args) {
 
         System.out.println("=== Тест 1: дозволена комбінація ===");
@@ -84,6 +82,7 @@ public class Task14 {
             System.out.println("Результат: " + result);
 
         } catch (IllegalArgumentException e) {
+            System.out.println("Масив: {1, 3, 5, 7, 9}");
             System.out.println("Очікувана помилка: " + e.getMessage());
         }
     }

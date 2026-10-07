@@ -2,7 +2,6 @@ package table1;
 
 public class Task44 {
     public static int findMaxAbsAtIndexMultipleOf7(int[] array) {
-        // Перевірка аргументу
         if (array == null) {
             throw new NullPointerException("Масив не може бути null.");
         }
@@ -11,10 +10,8 @@ public class Task44 {
             throw new IllegalArgumentException("Масив не може бути порожнім.");
         }
 
-        // Індекс 0 кратний 7, тому беремо перший елемент як початкове значення
         int maxElement = array[0];
 
-        // Цикл for з лічильником
         for (int i = 0; i < array.length; i++) {
 
             // Перевірка, чи індекс кратний 7
@@ -58,6 +55,7 @@ public class Task44 {
             System.out.println("Результат: " + result);
 
         } catch (IllegalArgumentException | NullPointerException e) {
+            System.out.println("Масив: {}");
             System.out.println("Очікувана помилка: " + e.getMessage());
         }
     }

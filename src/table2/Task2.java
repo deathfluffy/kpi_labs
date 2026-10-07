@@ -53,5 +53,17 @@ public class Task2 {
         } catch (IllegalArgumentException | NullPointerException e) {
             System.out.println("Помилка: " + e.getMessage());
         }
+        System.out.println();
+        System.out.println("=== Тест 3: заборонена комбінація (порожня матриця) ===");
+
+        int[][] matrix3 = {};
+
+        try {
+            lolSwap(matrix3);
+            System.out.println("Після: " + Arrays.deepToString(matrix3));
+
+        } catch (IllegalArgumentException | NullPointerException e) {
+            System.out.println("Очікувана помилка: " + e.getMessage());
+        }
     }
 }
